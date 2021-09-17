@@ -1,0 +1,370 @@
+@import "../utils/settings";
+
+// main
+.content {
+    margin-top: 5rem;
+}
+
+// getting started section
+.getting-started {
+    padding: 15px 5px 35px 5px;
+
+    a {
+        text-decoration: underline;
+    }
+
+    .heading-text {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .bold {
+        color: $dark-green;
+        font-size: 1.5rem;
+    }
+
+    .step {
+        align-items: flex-start;
+    }
+
+    .step-details {
+        width: 19rem;
+    }
+}
+
+// favorite section
+.favorites-section {
+    text-align: center;
+
+    .favorites__heading-section {
+        background: $lighter-green;
+        padding-top: 10px;
+
+        .button-tabbed-section {
+            margin-top: 1rem;
+            justify-content: space-evenly;
+            gap: 10px;
+
+        }
+    }
+
+    .favourites__content-section {
+        background: $light-green;
+        padding: 1rem 0;
+
+        .small-heading {
+            padding: 10px;
+        }
+
+
+        .tabcontent {
+            display: none;
+            animation: fadeEffect 1s;
+        }
+
+        /* Go from zero to full opacity */
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+
+// feaures section
+
+.features {
+    .features-heading {
+        text-align: center;
+        padding: 30px 0;
+
+        .med-heading {
+            padding-bottom: 15px;
+        }
+
+    }
+
+    .feature {
+        padding: 10px;
+
+        a {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .small-heading {
+            padding-bottom: 10px;
+        }
+
+        .para {
+            padding: 5px 0;
+        }
+    }
+}
+
+// rewards section
+.rewards-section {
+    background: $Cream;
+    margin: 3rem 0;
+    padding: 20px 0;
+
+    .rewards-heading {
+        text-align: center;
+        margin: 2rem 0;
+
+        .med-heading {
+            padding-bottom: 15px;
+        }
+    }
+
+    .reward-container:nth-last-child(1) {
+        border-bottom: 0px transparent none;
+    }
+
+    .reward-container {
+        padding: 20px 0;
+        border-bottom: 1px solid $light-grey;
+
+        .reward-pricing {
+            padding-bottom: 3rem;
+            padding-left: 10px;
+        }
+
+        .reward-details {
+            align-self: flex-start;
+
+            .small-heading {
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+
+// terms and condition
+.terms-condition {
+    background: $Cream;
+    padding: 10px 3px;
+    margin: 2rem 0;
+
+    .small-heading {
+        font-size: 0.9rem;
+    }
+
+    .para {
+        margin: 0.6rem 0;
+        font-size: 0.85rem;
+    }
+
+    .earning-star__text {
+        margin: 1.6rem 0;
+    }
+
+
+}
+
+
+@media screen and (min-width: 760px) {
+
+    // getting started section
+    .getting-started {
+        padding-top: 60px;
+
+        .container {
+            justify-content: center;
+            gap: 4rem;
+            margin: 3rem 0;
+
+        }
+
+        .heading-text {
+            padding-bottom: 50px;
+        }
+
+
+
+
+        .step {
+            width: 17rem;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .step-details {
+            width: 19rem;
+        }
+    }
+
+    // favorite section
+    .favorites-section {
+        text-align: left;
+
+        .favorites__heading-section {
+            background: $lighter-green;
+            padding-top: 10px;
+            text-align: center;
+
+            .med-heading {
+                font-size: 1.9rem;
+            }
+
+            .button-tabbed-section {
+                margin-top: 2rem;
+                justify-content: center;
+                gap: 4rem;
+
+
+            }
+        }
+
+        .favourites__content-section {
+            .tabcontent-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+            }
+
+            .tabcontent-text {
+                width: 26rem;
+            }
+
+            .small-heading {
+                padding: 16px 0;
+                font-size: 1.9rem;
+            }
+        }
+
+    }
+
+
+    // feaures section
+
+    .features {
+
+
+        .container {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4rem;
+
+            .feature {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 20rem;
+                text-align: center;
+
+            }
+        }
+
+        .features-heading {
+            max-width: 38rem;
+            margin: 0 auto;
+
+            .med-heading {
+                font-size: 1.8rem;
+            }
+
+        }
+
+        .feature {
+            padding: 10px;
+
+            a {
+                text-decoration: underline;
+                font-weight: 600;
+            }
+
+            .small-heading {
+                padding-bottom: 10px;
+            }
+
+            .para {
+                padding: 5px 0;
+            }
+        }
+    }
+
+    // rewards section
+    .rewards-section {
+
+        .rewards-heading {
+            margin: 20px auto;
+            text-align: center;
+            max-width: 43rem;
+
+            .med-heading {
+                padding-bottom: 15px;
+                font-size: 1.8rem;
+            }
+        }
+
+        .reward-container:nth-last-child(1) {
+            border-bottom: 0px transparent none;
+            justify-content: flex-start;
+        }
+
+        .reward-container {
+            padding: 20px;
+            border-bottom: 1px solid $light-grey;
+            justify-content: space-evenly;
+            gap: 3rem;
+
+            .reward-pricing {
+                padding-bottom: 3rem;
+                padding-left: 10px;
+                width: 24rem;
+            }
+
+            .reward-item {
+                max-width: 27rem;
+            }
+
+
+
+        }
+    }
+
+
+    // terms and condition
+    .terms-condition {
+        .heading-text {
+            padding: 0 3rem;
+        }
+
+        padding: 30px 0;
+
+        .container {
+
+            justify-content: space-evenly;
+            gap: 2rem;
+
+            .item {
+                width: 45%;
+            }
+        }
+
+
+        .para {
+
+            font-size: 1rem;
+        }
+
+        .earning-star__text {
+            margin: 1.6rem 0;
+        }
+
+    }
+}

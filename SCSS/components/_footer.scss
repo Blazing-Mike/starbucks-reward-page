@@ -1,0 +1,63 @@
+@import "../utils/settings";
+
+
+.accordion-section {
+    box-shadow: 0px -1px 4px 0px grey;
+    border-bottom: 1px solid $grey;
+    padding: 10px;
+
+    .accordion-item {
+        margin: 20px 0;
+    }
+
+    .panel {
+        align-items: flex-start;
+        gap: 12px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.1s ease-out;
+    }
+}
+
+.mini-footer {
+    padding: 20px 5px;
+
+    .footer-item {
+        align-items: flex-start;
+        gap: 15px;
+        margin: 2rem 10px -10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .accordion-section {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+
+        padding: 20px;
+
+        .accordion-item {
+            margin: 20px 0;
+            max-width: 20rem;
+        }
+
+        .panel {
+            max-height: 250px;
+            gap: 20px;
+        }
+    }
+
+
+    .mini-footer {
+
+        .footer-item {
+            border-top: 1px solid $light-grey;
+            padding: 20px 0;
+            justify-content: center;
+            gap: 35px;
+
+        }
+    }
+
+}

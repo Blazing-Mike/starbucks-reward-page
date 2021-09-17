@@ -1,0 +1,81 @@
+@import "../utils/settings";
+
+//starcode section
+.starcode-questions {
+    padding: 10px 5px;
+
+    .med-heading {
+        padding-bottom: 10px;
+    }
+
+    .form-section {
+        gap: 5px;
+        padding: 5px;
+        justify-content: flex-end;
+
+        .starcode {
+            width: 23rem;
+            border-radius: 5px;
+            height: 2.6rem;
+            border: 1px solid black;
+            margin: 1rem 0;
+
+        }
+
+        .starcode::placeholder {
+            padding: 10px;
+            font-size: 1.1rem;
+            color: black;
+        }
+    }
+
+
+    .starcode-text {
+        margin: 1rem 0;
+    }
+
+}
+
+@media screen and (min-width: 760px) {
+
+
+    //starcode section
+    .starcode-questions {
+        padding: 10px 25px;
+        margin: 0 auto;
+        max-width: 45rem;
+
+        .med-heading {
+            padding-bottom: 10px;
+        }
+
+        .form-section {
+
+            justify-content: center;
+            margin: 1rem 0;
+
+            .starcode {
+                width: 23rem;
+                border-radius: 5px;
+                height: 2.6rem;
+                border: 1px solid black;
+                margin: 1rem 0;
+
+            }
+
+            .starcode::placeholder {
+                padding: 10px;
+                font-size: 1.1rem;
+                color: black;
+            }
+        }
+
+
+        .starcode-text {
+            margin: 5rem 0;
+        }
+
+    }
+
+
+}

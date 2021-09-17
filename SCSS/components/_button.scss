@@ -1,0 +1,143 @@
+@import "../utils/settings";
+//styles that belongs to buttons
+
+
+
+/* buttons */
+.primary-btn {
+	width: 6rem;
+	height: 2.3rem;
+	border-radius: 15px;
+	padding: 5px;
+	background: inherit;
+	font-weight: 600;
+}
+
+.sec-btn {
+	width: 8rem;
+	height: 2rem;
+	padding: 5px;
+	border-radius: 17px;
+}
+
+.light {
+	background: white;
+	border: 1px solid black;
+}
+
+.dark {
+	background: black;
+	border: transparent;
+	color: white;
+}
+
+.bar {
+	width: 25px;
+	height: 2px;
+	margin: 5px 0;
+	background: #000000;
+}
+
+.Toggle__show {
+
+	.toggle__close {
+		display: block;
+	}
+
+	.bar {
+		display: none;
+	}
+}
+
+.number {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	border: 1.5px solid $dark-green;
+}
+
+.tablinks {
+	background: inherit;
+	border: transparent;
+	font-size: 1.4rem;
+	width: 6rem;
+	padding-left: 20px;
+
+	.active {
+		border-bottom: 5px solid $green;
+	}
+
+	&:hover {
+		border-bottom: 4px solid $green;
+
+	}
+}
+
+.color-gold {
+	color: rgb(203, 162, 88)
+}
+
+.text-xs {
+	width: 1rem;
+	font-size: 1.1rem;
+}
+
+.submit {
+	width: 6rem;
+	height: 2.3rem;
+	border-radius: 20px;
+	background: transparent;
+	border: 1px solid black;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transition: 0.9s ease-in-out;
+
+}
+
+.submit:hover {
+	background: $light-grey;
+}
+
+.accordion-item {
+	.accordion {
+		background: inherit;
+		border: transparent;
+		font-size: 1.2rem;
+		font-weight: 500;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.accordion:after {
+		content: url("/images/arrow-down.svg");
+		font-size: 20px;
+		width: 1.9rem;
+		font-weight: bold;
+		float: right;
+
+	}
+
+	.active:after {
+		content: url("/images/arrow-down.svg");
+		transform: rotate(180deg);
+		width: 1.9rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.accordion-item {
+		.accordion {
+			font-size: 1.5rem;
+			margin: 1rem 0;
+
+		}
+	}
+
+	.accordion:after {
+		display: none;
+
+	}
+
+
+}

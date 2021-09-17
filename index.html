@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.min.css">
+    <title>Starbucks reward page</title>
+</head>
+<header class="header" id="header">
+    <div class="Navbar"> <!-- NAVBAR-->
+        <div class="Navbar__logo">
+            <img src="./images/logo.svg" alt="logo" class="logo">
+        </div>
+    
+        <div class="Navbar__toggle">
+         <div class="bar one"></div>
+         <div class="bar two"></div>
+         <div class="bar three"></div>
+         <img src="/images/close.svg" alt="close" class="toggle__close">
+        </div>
+        
+        <nav class="Navbar__items ">
+            <button class="Navbar__links menu-link flex-aligned">Menu  <img src="/images/right-arrow.svg" alt="close" class="right-arrow"></button>
+            <div class="mini-menu-items flex-aligned fd-column algn-items-start">
+                <h2 class="med-heading">Menu</h2>
+                <a href="#" class="Navbar__links">All products</a>
+                <a href="#" class="Navbar__links">Featured</a>
+                <a href="#" class="Navbar__links">Previous</a>
+                <a href="#" class="Navbar__links">Favorites</a>
+            </div>
+            <a href="#" class="Navbar__links">Rewards</a>
+            <a href="#" class="Navbar__links">Gift Cards</a>
+            <div class="Navbar__extra-items flex-aligned gap-x">
+     <button class="primary-btn light">Sign in</button>
+     <button class="primary-btn dark">Sign Up</button>
+            </div>
+            <a href="#" class="Navbar__links flex-aligned store-link"> <img src="./images/location.svg" alt="location" class="small-icons"> Find a store</a>
+        </nav>
+    </div>
+    
+    <div class="sticky-bar flex"> <!-- STICKY BAR-->
+        <p class="bold small-heading white-text">STARBUCKS® REWARDS</p>
+        <button class="sec-btn dark white-text bold">Join in the app</button>
+    </div>
+</header>
+<div class="content">
+<div class="Hero"> <!-- HERO-->
+<div class="Hero__text">
+    <h1 class="big-heading">
+        FREE COFFEE <br> IS A TAP AWAY</h1>
+    <p class="para">Join now to start earning Rewards.</p>
+    <button class="med-btn white-text bold">Join in the app</button>
+    <a href="#" class="Hero-link mobile-only">Or join online </a> 
+
+ <p class="desktop-only para">Or <a href="#" class="link desktop-only">join in the app</a> for the best experience</p>
+
+</div>
+</div>
+
+<div class="getting-started"> <!-- GETTING STARTED SECTION-->
+  <div class="heading-text">  <h2 class="med-heading">Getting started is easy </h2>
+    <p class="para">Earn Stars and get rewarded in a few easy steps.</p></div>
+
+        <div class="container flex-aligned fw-wrap gap-x"> 
+
+<div class="step flex  gap-x">
+    <div class="number flex-perfect">
+        <p class="bold">1</p>
+    </div>
+
+    <div class="step-details">
+        <h3 class="small-heading">Create an account</h3>
+        <p class="para">To get started, join now. You can also <a href="#" class="green-text"> join in the app </a> to get access to the full range of Starbucks® Rewards benefits.</p>
+    </div>
+</div>
+
+<div class="step flex gap-x">
+    <div class="number flex-perfect">
+        <p class="bold">2</p>
+    </div>
+
+    <div class="step-details">
+        <h3 class="small-heading">Order and pay how you’d like</h3>
+        <p class="para">Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a href="#" class="green-text">Learn how</a></p>
+    </div>
+</div>
+
+<div class="step flex gap-x">
+    <div class="number flex-perfect">
+        <p class="bold">3</p>
+    </div>
+
+    <div class="step-details">
+        <h3 class="small-heading">Earn Stars, get Rewards</h3>
+        <p class="para">As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+    </div>
+</div>
+
+ </div>
+   
+</div>
+
+<div class="favorites-section"> <!-- FAVORITES SECTION-->
+<div class="favorites__heading-section">
+    <h2 class="med-heading">Get your favorites for free</h2>
+    <div class="button-tabbed-section flex-aligned">
+    <button class="transparent tablinks flex-perfect"  onclick="openCity(event, 'twenty-five')" id="defaultOpen"><p class="bold">25</p> <span class="color-gold text-xs">★</span></button>
+    <button class="transparent tablinks flex-perfect" onclick="openCity(event, 'fifty')"><p class="bold">50</p> <span class="color-gold text-xs">★</span></button>
+    <button class="transparent tablinks flex-perfect" onclick="openCity(event, 'one-fifty')"><p class="bold">150</p> <span class="color-gold text-xs">★</span></button>
+    <button class="transparent tablinks flex-perfect" onclick="openCity(event, 'two-hundred')"><p class="bold">200</p> <span class="color-gold text-xs">★</span></button>
+    <button class="transparent tablinks flex-perfect" onclick="openCity(event, 'four-hundred')"><p class="bold">400</p> <span class="color-gold text-xs">★</span></button>
+    
+    </div>
+</div>
+
+<div class="favourites__content-section">
+
+    <div id="twenty-five" class="tabcontent">
+       <figure class="tabcontent-image">
+           <img src="./images/asset0.webp" alt="customize drinks" class="content-image">
+           <figcaption class="tabcontent-text">
+               <h3 class="small-heading">Customize your drink </h3>
+               <p class="para">Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+           </figcaption>
+        </figure>
+
+      </div>
+      <div id="fifty" class="tabcontent">
+        <figure class="tabcontent-image flex-aligned">
+            <img src="./images/asset 1.webp" alt="customize drinks" class="content-image">
+            <figcaption class="tabcontent-text">
+                <h3 class="small-heading">Brewed hot coffee, bakery item or hot tea</h3>
+                <p class="para">Pair coffee cake or an almond croissant with your fresh cup of hot brew.</p>
+            </figcaption>
+         </figure>
+ 
+       </div>
+
+       <div id="one-fifty" class="tabcontent">
+        <figure class="tabcontent-image">
+            <img src="./images/asset 2.webp" alt="customize drinks" class="content-image">
+            <figcaption class="tabcontent-text">
+                <h3 class="small-heading">Handcrafted drink, hot breakfast or parfait </h3>
+                <p class="para">Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.</p>
+            </figcaption>
+         </figure>
+ 
+       </div>
+
+       <div id="two-hundred" class="tabcontent">
+        <figure class="tabcontent-image">
+            <img src="./images/asset 3.webp" alt="customize drinks" class="content-image">
+            <figcaption class="tabcontent-text">
+                <h3 class="small-heading">Salad, sandwich or protein box</h3>
+                <p class="para">Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.</p>
+            </figcaption>
+         </figure>
+ 
+       </div>
+
+       <div id="four-hundred" class="tabcontent">
+        <figure class="tabcontent-image">
+            <img src="./images/asset 4.webp" alt="customize drinks" class="content-image">
+            <figcaption class="tabcontent-text">
+                <h3 class="small-heading">Select merchandise or at-home coffee</h3>
+                <p class="para">Take home a signature cup, a bag of coffee or your choice of select coffee accessories.</p>
+            </figcaption>
+         </figure>
+ 
+       </div>
+
+</div>
+
+</div>
+
+<div class="features"> <!-- features-->
+<div class="features-heading">
+    <h2 class="med-heading">Endless Extras</h2>
+    <p class="para">Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.</p>
+</div>
+
+<div class="container">
+    <div class="feature flex gap-x">
+        <div class="flex-perfect">
+            <img src="./images/fun-freebies.webp" alt="fun-freebies" class="feature-image">
+        </div>
+    
+        <div class="feature-details">
+            <h3 class="small-heading">Fun freebies</h3>
+            <p class="para">Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</p>
+            <a href="#" class="green-text">Learn more</a>
+        </div>
+    </div>
+    <div class="feature  flex gap-x">
+        <div class="flex-perfect">
+            <img src="./images/order-and-pay-ahead.webp" alt="order-and-pay-ahead" class="feature-image">
+        </div>
+    
+        <div class="feature-details">
+            <h3 class="small-heading">Order & pay ahead</h3>
+            <p class="para">Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</p>
+            <a href="#" class="green-text">Learn more</a>
+        </div>
+    </div>
+
+    <div class="feature flex gap-x">
+        <div class="flex-perfect">
+            <img src="./images/get-to-free-faster.webp" alt="get-to-free-faster" class="feature-image">
+        </div>
+    
+        <div class="feature-details">
+            <h3 class="small-heading">Get to free faster</h3>
+            <p class="para">Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
+            <a href="#" class="green-text">Learn more</a>
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+<div class="rewards-section">
+    <div class="rewards-heading">
+        <h2 class="med-heading">Cash or card, you earn Stars</h2>
+        <p class="para">No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.</p>
+    </div>
+
+   
+
+      <div class="reward-container flex-aligned fw-wrap">
+
+        <div class="reward-pricing">
+            <p class="small-heading bold flex-aligned"> 1★ per dollar</p>
+            <p class="para">Pay as you go</p>
+        </div>
+
+        <div class="reward-item flex gap-x">
+            <div class="flex-perfect">
+                <img src="./images/scan-pay.png" alt="scan-pay" class="reward-image">
+            </div>
+        
+            <div class="reward-details">
+                <h3 class="small-heading"> Scan and pay separately</h3>
+                <p class="para">Use cash or credit/debit card at the register.</p>
+            </div>
+        </div>
+
+        <div class="reward-item flex gap-x">
+            <div class="flex-perfect">
+                <img src="./images/save-payment.png" alt="save-payment" class="reward-image">
+            </div>
+        
+            <div class="reward-details">
+                <h3 class="small-heading">Save payment in the app</h3>
+                <p class="para">Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</p>
+            </div>
+        </div>
+      </div>
+        
+   
+      <div class="reward-container flex-aligned fw-wrap">
+
+        <div class="reward-pricing">
+            <p class="small-heading bold flex-aligned"> 2★ per dollar</p>
+            <p class="para">Pay as you go</p>
+        </div>
+
+        <div class="reward-item flex gap-x">
+            <div class="flex-perfect algn-start">
+                <img src="./images/register-card.png" alt="register-card" class="reward-image">
+            </div>
+        
+            <div class="reward-details">
+                <h3 class="small-heading"> Register your gift card</h3>
+                <p class="para">Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+            </div>
+        </div>
+
+        <div class="reward-item flex gap-x">
+            <div class="flex-perfect algn-start">
+                <img src="./images/preload.png" alt="preload" class="reward-image">
+            </div>
+        
+            <div class="reward-details">
+                <h3 class="small-heading">Preload</h3>
+                <p class="para">To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app</p>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="reward-container flex-aligned fw-wrap">
+
+        <div class="reward-pricing">
+            <p class="small-heading bold flex-aligned">Up to 3★ per dollar</p>
+            <p class="para">With Starbucks® Rewards Visa® Card</p>
+        </div>
+
+        <div class="reward-item flex gap-x">
+            <div class="flex-perfect  algn-start">
+                <img src="./images/visa-card.png" alt="visa-card" class="reward-image">
+            </div>
+        
+            <div class="reward-details">
+                <h3 class="small-heading"> Scan and pay separately</h3>
+                <p class="para">Earn Stars on all purchases you make with our redit cardopens in new window in and outside of Starbucks.
+                     Earn 1 Star per $1 when you digitally preload your Starbucks Card with your Starbucks® Rewards Visa® Card,
+                     and earn 2 Stars per $1 when you pay with that preloaded Starbucks Card.
+                </p>
+            </div>
+        </div>
+
+      </div>
+
+
+
+</div>
+
+<div class="starcode-questions"> <!-- FORM AND QUESTIONS-->
+    <h2 class="med-heading">Star Codes</h2>
+    <p class="para">Yesssss. You’ve got Stars in your hand. Enter your code here and we’ll add Stars to your account.</p>
+    <div class="form-section flex-aligned fw-wrap ">     
+    <input type="text" class="starcode" placeholder="Enter your starcode">
+    <button class="submit">Submit</button>
+    </div>
+
+    <div class="starcode-text"><p class="para">Have a receipt but don't have a code?</p>
+        <p class="para">Go to <span class="link"><a href="#" class="green-text">starbucks-stars.com
+            <img src="./images/link.svg" alt="link" class="link-image"></a></span> opens in new window to upload your receipt and collect your Stars</p></div>
+    <div class="starcode-text">
+        <h2 class="med-heading">Questions?</h2>
+        <p class="para">We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked questions 
+            right over here opens in new window. <span class="link"><a href="#" class="green-text">right over here
+            <img src="./images/link.svg" alt="link" class="link-image"></a></span></p>
+    </div>
+</div>
+
+    <div class="terms-condition"> <!--TERMS AND CONDITION-->
+<p class="para heading-text">At participating stores. Restrictions apply.</p>
+<div class="container flex-aligned fw-wrap">
+    
+<div class="earning-star__text item">
+    <h3 class="small-heading">EARNING STARS</h3>
+
+    <p class="para">Stars cannot be earned on purchases of alcohol, Starbucks Cards or Starbucks Card reloads.</p>
+    <p class="para">Earn 1 Star per $1 spent when you scan your member barcode in the app, then pay with cash, credit/debit cards or mobile wallets at participating stores. 
+        You can also earn 1 Star per $1 spent when you link a payment method and pay directly through the app.</p>
+    <p class="para">Earn 2 Stars per $1 spent when you load funds and pay with your digital Starbucks Card in the app. You can also earn 2 Stars per $1 spent when you pay in-person at a participating store with your registered physical Starbucks Card or scan your member barcode in the app,
+         and then use any physical Starbucks Card (regardless of whether it is registered) to complete the purchase.</p>
+</div>
+
+<div class="terms_text item">
+    <h3 class="small-heading">TERMS OF USE</h3>
+
+    <p class="para">For full program details visit <span class="link"><a href="#" class="green-text">starbucks.com/rewards/terms<img src="./images/link.svg" alt="link" class="link-image"></a></span>.</p>
+    <p class="para">* Earn 1 Star per $1 when digitally loading your Starbucks Card with your Starbucks® Rewards Visa® Card: See your Card Rewards Program Agreement for more details.</p>
+    <p class="para">Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the 
+       <span class="link"><a href="#" class="green-text">Starbucks Store Locator <img src="./images/link.svg" alt="link" class="link-image"></a></span>
+        opens in new window and search for locations honoring “Redeem Rewards”.</p>
+        <p class="para">Deposit and credit card products provided by JPMorgan Chase Bank, N.A. Member FDIC</p>
+</div>
+
+
+<div class="benefit_text item">
+    <h3 class="small-heading">BENEFITS</h3>
+    <p class="para">Free refills available during same in-store visit only. To qualify for the Birthday Reward, you must have made at least one Star-earning transaction.</p>
+
+</div>
+
+
+<div class="redeeming-reward__text item">
+    <h3 class="small-heading">REDEEMING REWARDS</h3>
+    <p class="para">Rewards cannot be redeemed for alcoholic beverages or multi-serve items. 
+        Not all stores honor tiered Rewards. Select stores redeem 150 Stars for free food or drink items only.</p>
+</div>
+
+</div>
+
+    </div>
+
+    <div class="footer"> <!-- FOOTER-->
+
+        <div class="accordion-section">
+         <div class="accordion-item">
+            <button class="accordion">About Us</button>
+            <div class="panel flex fd-column fw-wrap">
+         <a href="#" class="footer-links">Our Company</a>
+         <a href="#" class="footer-links">Our Coffee</a>
+         <a href="#" class="footer-links">Stories and News</a>
+         <a href="#" class="footer-links">Starbucks Archive </a>
+         <a href="#" class="footer-links">Investor Relations</a>
+         <a href="#" class="footer-links">Customer Service</a>
+            </div>
+         </div>
+            
+
+         <div class="accordion-item">
+            <button class="accordion">Careers</button>
+            <div class="panel flex fd-column fw-wrap">
+         <a href="#" class="footer-links">Culture and Values</a>
+         <a href="#" class="footer-links">Inclusion, Diversity, and Equity</a>
+         <a href="#" class="footer-links">College Achievement Plan</a>
+         <a href="#" class="footer-links">U.S. Careers</a>
+         <a href="#" class="footer-links">International Careers</a>
+            </div>
+         </div>
+
+
+         <div class="accordion-item">
+            <button class="accordion">Social Impact</button>
+            <div class="panel flex fd-column fw-wrap">
+         <a href="#" class="footer-links">Ethical Sourcing</a>
+         <a href="#" class="footer-links">Planet</a>
+         <a href="#" class="footer-links">Environmental and Social Impact Reporting</a>
+         <a href="#" class="footer-links desktop-only">Creating Opportunity</a>
+         <a href="#" class="footer-links desktop-only">Global Social Impact Report</a>
+
+            </div>
+         </div>
+         
+
+         <div class="accordion-item">
+            <button class="accordion">For Business partners</button>
+            <div class="panel flex fd-column fw-wrap">
+         <a href="#" class="footer-links">Landlord Support Center</a>
+         <a href="#" class="footer-links">Suppliers</a>
+         <a href="#" class="footer-links">Corporate Gift Card Sales</a>
+         <a href="#" class="footer-links">Office and Foodservice Coffee</a>
+         
+            </div>
+         </div>
+         
+         <div class="accordion-item">
+            <button class="accordion">  Order and Pickup</button>
+            <div class="panel flex fd-column fw-wrap">
+         <a href="#" class="footer-links">Order on the App</a>
+         <a href="#" class="footer-links"> Order on the Web</a>
+         <a href="#" class="footer-links">Delivery</a>
+         <a href="#" class="footer-links">Order and Pickup Options</a>
+         <a href="#" class="footer-links">Explore and Find Coffee for Home</a>
+            </div>
+         </div>
+
+        </div>
+
+
+        <div class="mini-footer">
+            <div class="icon-section flex gap-x">
+       <img src="/images/spotify.svg" alt="spotify" class="social-icon">
+       <img src="/images/facebook.svg" alt="facebook" class="social-icon">
+       <img src="/images/pinterest.svg" alt="pinterest" class="social-icon">
+       <img src="/images/instagram.svg" alt="instagram" class="social-icon">
+       <img src="/images/youtube.svg" alt="youtube" class="social-icon">
+       <img src="/images/twitter.svg" alt="twitter" class="social-icon">
+       
+            </div>
+
+            <div class="flex-aligned gap-xx footer-item">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link"> Terms of Use</a>
+                <a href="#" class="footer-link"> CA Supply Chain Act</a>
+                <a href="#" class="footer-link">Submit Your Idea</a>
+                <a href="#" class="footer-link">Cookie Preferences</a>
+            </div>
+        </div>
+                
+
+       
+
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

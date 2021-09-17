@@ -1,0 +1,66 @@
+// this contains variables for colors, height, border-radius, mixins, font-sizes, etc
+
+$green: #00a862;
+$darker-green: #00653e;
+$dark-green: #008248;
+$light-green:#d4e9e2;
+$lighter-green:rgba(212, 233, 226, 0.33);
+$Cream :#f3f1e7;
+$grey: grey;
+$light-grey: lightgrey;
+
+.gap {
+  gap: 5px;
+}
+
+.gap-x {
+  gap: 1rem;
+}
+
+.gap-xx {
+  gap: 2rem;
+}
+
+.gap-xxx {
+  gap: 4rem;
+}
+
+/* images */
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 2.5rem;
+}
+
+.small-icons {
+  width: 2rem;
+}
+
+.content-image {
+  max-width: 35rem;
+}
+
+.reward-image {
+  width: 7rem;
+}
+
+.feature-image {
+  max-width: 10rem;
+}
+
+.link-image {
+  width: 25px;
+  margin-bottom: -7px;
+}
+
+.social-icon {
+  width: 2rem;
+}
+
+/* general-styles */
+.flex {
+  display: flex;
+  align-items: center;
+}
